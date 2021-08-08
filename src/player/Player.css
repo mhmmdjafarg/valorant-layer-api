@@ -1,19 +1,64 @@
+.player {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1em;
+}
+
 .player-card {
-  width: 350px;
-  height: 100px;
+  width: 13.75rem;
+  height: 5rem;
   display: flex;
   color: white;
-  flex-wrap: wrap;
 }
 
 .side-card {
-  flex: 0 0 100px;
+  flex: 0 0 5.625rem;
   --tw-bg-opacity: 1;
   background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
 }
 
 .centre-card {
-  flex: 0 0 50px;
+  flex: 0 0 3.125rem;
+background-color: #059669;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+}
+
+.skill-card {
+  flex: 0 0 5rem;
   --tw-bg-opacity: 1;
-  background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
+  background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+}
+
+img {
+  object-fit: contain;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0.3em;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 0.3em;
+  justify-content: space-around;
+}
+
+.row p {
+  font-size: small;
+}
+
+.skill-icon {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.empty {
+  opacity: 0.6;
 }

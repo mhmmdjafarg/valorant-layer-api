@@ -7,6 +7,8 @@ const App = () => {
   return (
     <div className="App">
       <Player/>
+      <Player/>
+      <Player/>
     </div>
   );
 }
