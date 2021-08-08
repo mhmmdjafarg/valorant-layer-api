@@ -26,7 +26,9 @@ const Player = () => {
           </div>
         </div>
       </div>
-      <div className="weapon"></div>
+      <div className="weapon">
+        <img src="/assets/weapon.svg" alt="" />
+      </div>
     </div>
   );
 };
