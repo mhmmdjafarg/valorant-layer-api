@@ -16,9 +16,9 @@ const PlayerRed = () => {
             <p>1</p>
             <img className="skill-icon" src="/assets/skill2.svg" alt="" />
           </div>
-          <div className="row">
+          <div className="row empty">
             <p>0</p>
-            <img className="skill-icon empty" src="/assets/skill3.svg" alt="" />
+            <img className="skill-icon" src="/assets/skill3.svg" alt="" />
           </div>
         </div>
         <div className="centre-card-red">
@@ -27,6 +27,7 @@ const PlayerRed = () => {
         </div>
         <div className="side-card">
           <img className="rotate" src="assets/character.svg" alt="" />
+          <p className="player-name">Bambank</p>
         </div>
       </div>
     </div>

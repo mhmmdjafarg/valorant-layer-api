@@ -11,16 +11,30 @@
   --tw-bg-opacity: 1;
   background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
   color: white;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
-.centre-card {
-  flex: 0 0 3.125rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5em;
-  font-weight: 600;
+.side-card {
+  flex: 0 0 5.625rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.side-card img {
+  filter: brightness(80%);
+}
+
+.player-name {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 700;
+  font-size: small;
 }
 
 .skill-card {

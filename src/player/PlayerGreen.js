@@ -6,6 +6,7 @@ const PlayerGreen = () => {
       <div className="player-card">
         <div className="side-card">
           <img src="assets/character.svg" alt="" />
+          <p className="player-name">Bambank</p>
         </div>
         <div className="centre-card-green">
           <p>50</p>
@@ -20,8 +21,8 @@ const PlayerGreen = () => {
             <img className="skill-icon" src="/assets/skill2.svg" alt="" />
             <p>2</p>
           </div>
-          <div className="row">
-            <img className="skill-icon empty" src="/assets/skill3.svg" alt="" />
+          <div className="row empty">
+            <img className="skill-icon" src="/assets/skill3.svg" alt="" />
             <p>0</p>
           </div>
         </div>

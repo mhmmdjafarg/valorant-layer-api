@@ -9,6 +9,8 @@
   align-items: center;
   padding: 0.5em;
   font-weight: 600;
+  font-size: medium;
+  border-radius: 10px 10px 0 0;
 }
 
 .rotate {
