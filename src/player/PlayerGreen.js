@@ -1,13 +1,13 @@
-import "./Player.css";
+import "./PlayerGreen.css";
 
-const Player = () => {
+const PlayerGreen = () => {
   return (
     <div className="player">
       <div className="player-card">
         <div className="side-card">
           <img src="assets/character.svg" alt="" />
         </div>
-        <div className="centre-card">
+        <div className="centre-card-green">
           <p>50</p>
           <p>100</p>
         </div>
@@ -33,4 +33,4 @@ const Player = () => {
   );
 };
 
-export default Player;
+export default PlayerGreen;

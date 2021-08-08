@@ -8,18 +8,13 @@
   width: 13.75rem;
   height: 5rem;
   display: flex;
-  color: white;
-}
-
-.side-card {
-  flex: 0 0 5.625rem;
   --tw-bg-opacity: 1;
   background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+  color: white;
 }
 
 .centre-card {
   flex: 0 0 3.125rem;
-  background-color: #16a34a;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

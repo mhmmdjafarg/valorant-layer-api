@@ -1,16 +1,18 @@
 import React from 'react';
 import './App.css';
-import Player from './player/Player';
+import PlayerGreen from './player/PlayerGreen';
+import PlayerRed from './player/PlayerRed';
 
 
 const App = () => {
   return (
     <div className="App">
-      <Player/>
-      <Player/>
-      <Player/>
-      <Player/>
-      <Player/>
+      <PlayerGreen/>
+      <PlayerGreen/>
+      <PlayerGreen/>
+      <PlayerRed/>
+      <PlayerRed/>
+      <PlayerRed/>
     </div>
   );
 }

@@ -1,0 +1,12 @@
+@import url("Player.css");
+
+.centre-card-green {
+  flex: 0 0 3.125rem;
+  background-color: #16a34a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  font-weight: 600;
+}

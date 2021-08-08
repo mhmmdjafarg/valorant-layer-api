@@ -1,0 +1,17 @@
+@import url("Player.css");
+
+.centre-card-red {
+  flex: 0 0 3.125rem;
+  background-color: #dc2626;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  font-weight: 600;
+}
+
+.rotate {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
