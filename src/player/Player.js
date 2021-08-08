@@ -1,13 +1,11 @@
 import "./Player.css";
-import weapon from "../weapon.svg";
-import char from "../character.svg";
 
 const Player = () => {
   return (
     <div className="player">
       <div className="player-card">
         <div className="side-card">
-          <img src={char} alt="" />
+          <img src="assets/character.svg" alt="" />
         </div>
         <div className="centre-card">
           <p>50</p>
