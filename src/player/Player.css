@@ -1,0 +1,19 @@
+.player-card {
+  width: 350px;
+  height: 100px;
+  display: flex;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.side-card {
+  flex: 0 0 100px;
+  --tw-bg-opacity: 1;
+  background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+}
+
+.centre-card {
+  flex: 0 0 50px;
+  --tw-bg-opacity: 1;
+  background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
+}
