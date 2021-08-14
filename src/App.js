@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import './player/Player.css';
 import PlayerGreen from './player/PlayerGreen';
 import PlayerRed from './player/PlayerRed';
 

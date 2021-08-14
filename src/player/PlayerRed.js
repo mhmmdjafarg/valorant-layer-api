@@ -7,7 +7,7 @@ const PlayerRed = () => {
         <img className="rotate" src="/assets/weapon.svg" alt="" />
       </div>
       <div className="player-card">
-      <div className="skill-card skill">
+        <div className="skill-card skill">
           <div className="row">
             <p>1</p>
             <img className="skill-icon" src="/assets/skill1.svg" alt="" />
@@ -29,6 +29,9 @@ const PlayerRed = () => {
           <img className="rotate" src="assets/character.svg" alt="" />
           <p className="player-name">Bambank</p>
         </div>
+      </div>
+      <div id="circle-red">
+        <img className="circular-image" src="/assets/ultimate.svg" alt="" />
       </div>
     </div>
   );

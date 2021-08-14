@@ -1,5 +1,3 @@
-@import url("Player.css");
-
 .centre-card-red {
   flex: 0 0 3.125rem;
   background-color: #dc2626;
@@ -9,11 +7,22 @@
   align-items: center;
   padding: 0.5em;
   font-weight: 600;
-  font-size: medium;
-  border-radius: 10px 10px 0 0;
+  font-size: small;
 }
 
 .rotate {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
+}
+
+#circle-red {
+  position: absolute;
+  padding: 4px;
+  background:#dc2626;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  top: 0%;
+  left: 30%;
 }

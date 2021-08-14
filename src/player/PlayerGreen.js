@@ -30,6 +30,9 @@ const PlayerGreen = () => {
       <div className="weapon">
         <img src="/assets/weapon.svg" alt="" />
       </div>
+      <div id="circle-green">
+        <img className="circular-image" src="/assets/ultimate.svg" alt="" />
+      </div>
     </div>
   );
 };

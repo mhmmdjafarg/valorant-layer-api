@@ -1,5 +1,3 @@
-@import url("Player.css");
-
 .centre-card-green {
   flex: 0 0 3.125rem;
   background-color: #16a34a;
@@ -9,6 +7,17 @@
   align-items: center;
   padding: 0.5em;
   font-weight: 600;
-  font-size: medium;
-  border-radius: 10px 10px 0 0;
+  font-size: small;
+}
+
+#circle-green {
+  position: absolute;
+  padding: 4px;
+  background:#16a34a;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  top: 0%;
+  right: 98%;
 }
