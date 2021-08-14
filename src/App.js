@@ -6,14 +6,18 @@ import PlayerRed from './player/PlayerRed';
 
 
 const App = () => {
+  const datas = [
+    { name: 'Bambank', agent: 'raze', health: '100', shield: '20', weapon: 'rifle', skillQuantity: [1,0,0]}
+  ];
+
   return (
     <div className="App">
-      <PlayerGreen/>
-      <PlayerGreen/>
-      <PlayerGreen/>
-      <PlayerRed/>
-      <PlayerRed/>
-      <PlayerRed/>
+      <PlayerGreen datas={datas[0]}/>
+      <PlayerGreen datas={datas[0]}/>
+      <PlayerGreen datas={datas[0]}/>
+      <PlayerRed datas={datas[0]}/>
+      <PlayerRed datas={datas[0]}/>
+      <PlayerRed datas={datas[0]}/>
     </div>
   );
 }

@@ -1,37 +1,48 @@
 import "./PlayerRed.css";
 
-const PlayerRed = () => {
+const PlayerRed = (props) => {
+  // Looping through skills
+  const skillList = props.datas.skillQuantity.map((quantity, key) => (
+    <div className={`row ${quantity === 0 ? "empty" : ""} `}>
+      <img
+        className="skill-icon"
+        src={`/assets/${props.datas.agent + (key + 1)}.svg`}
+        alt=""
+      />
+      <p>{props.datas.skillQuantity[key]}</p>
+    </div>
+  ));
+
   return (
     <div className="player">
       <div className="weapon">
-        <img className="rotate" src="/assets/weapon.svg" alt="" />
+        <img
+          className="rotate"
+          src={`/assets/${props.datas.weapon}.svg`}
+          alt=""
+        />
       </div>
       <div className="player-card">
-        <div className="skill-card skill">
-          <div className="row">
-            <p>1</p>
-            <img className="skill-icon" src="/assets/skill1.svg" alt="" />
-          </div>
-          <div className="row">
-            <p>1</p>
-            <img className="skill-icon" src="/assets/skill2.svg" alt="" />
-          </div>
-          <div className="row empty">
-            <p>0</p>
-            <img className="skill-icon" src="/assets/skill3.svg" alt="" />
-          </div>
-        </div>
+        <div className="skill-card skill">{skillList}</div>
         <div className="centre-card-red">
-          <p>50</p>
-          <p>100</p>
+          <p>{props.datas.shield}</p>
+          <p>{props.datas.health}</p>
         </div>
         <div className="side-card">
-          <img className="rotate" src="assets/character.svg" alt="" />
-          <p className="player-name">Bambank</p>
+          <img
+            className="rotate"
+            src={`assets/${props.datas.agent}.svg`}
+            alt=""
+          />
+          <p className="player-name">{props.datas.name}</p>
         </div>
       </div>
       <div id="circle-red">
-        <img className="circular-image" src="/assets/ultimate.svg" alt="" />
+        <img
+          className="circular-image"
+          src={`/assets/${props.datas.agent + "ultimate"}.svg`}
+          alt=""
+        />
       </div>
     </div>
   );

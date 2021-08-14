@@ -1,37 +1,38 @@
 import "./PlayerGreen.css";
 
-const PlayerGreen = () => {
+const PlayerGreen = (props) => {
+  // Looping through skills
+  const skillList = props.datas.skillQuantity.map((quantity, key) => (
+    <div className={`row ${(quantity === 0) ? 'empty' : ''} `}>
+      <img
+        className="skill-icon"
+        src={`/assets/${props.datas.agent + (key+1)}.svg`}
+        alt=""
+      />
+      <p>{props.datas.skillQuantity[key]}</p>
+    </div>
+  ));
+
   return (
     <div className="player">
       <div className="player-card">
         <div className="side-card">
-          <img src="assets/character.svg" alt="" />
-          <p className="player-name">Bambank</p>
+          <img src={`assets/${props.datas.agent}.svg`} alt="" />
+          <p className="player-name">{props.datas.name}</p>
         </div>
         <div className="centre-card-green">
-          <p>50</p>
-          <p>100</p>
+          <p>{props.datas.shield}</p>
+          <p>{props.datas.health}</p>
         </div>
         <div className="skill-card skill">
-          <div className="row">
-            <img className="skill-icon" src="/assets/skill1.svg" alt="" />
-            <p>1</p>
-          </div>
-          <div className="row">
-            <img className="skill-icon" src="/assets/skill2.svg" alt="" />
-            <p>2</p>
-          </div>
-          <div className="row empty">
-            <img className="skill-icon" src="/assets/skill3.svg" alt="" />
-            <p>0</p>
-          </div>
+          {skillList}
         </div>
       </div>
       <div className="weapon">
-        <img src="/assets/weapon.svg" alt="" />
+        <img src={`/assets/${props.datas.weapon}.svg`} alt="" />
       </div>
       <div id="circle-green">
-        <img className="circular-image" src="/assets/ultimate.svg" alt="" />
+        <img className="circular-image" src={`/assets/${props.datas.agent + 'ultimate'}.svg`} alt="" />
       </div>
     </div>
   );
