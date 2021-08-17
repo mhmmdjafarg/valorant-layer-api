@@ -32,7 +32,7 @@ const PlayerGreen = (props) => {
         <img src={`${process.env.PUBLIC_URL}/assets/${props.datas.weapon}.png`} alt="" />
       </div>
       <div id="circle-green">
-        <img className="circular-image" src={ `${process.env.PUBLIC_URL}/assets/${props.datas.agent + 'ultimate'}.svg`} alt="" />
+        <img className="circular-image" src={ `${process.env.PUBLIC_URL}/assets/${props.datas.agent + 'Ultimate'}.svg`} alt="" />
       </div>
     </div>
   );

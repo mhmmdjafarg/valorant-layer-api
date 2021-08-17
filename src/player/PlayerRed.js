@@ -40,7 +40,7 @@ const PlayerRed = (props) => {
       <div id="circle-red">
         <img
           className="circular-image"
-          src={`${process.env.PUBLIC_URL}/assets/${props.datas.agent + "ultimate"}.svg`}
+          src={`${process.env.PUBLIC_URL}/assets/${props.datas.agent + "Ultimate"}.svg`}
           alt=""
         />
       </div>
