@@ -3,13 +3,13 @@ import "./PlayerRed.css";
 const PlayerRed = (props) => {
   // Looping through skills
   const skillList = props.datas.skillQuantity.map((quantity, key) => (
-    <div className={`row ${quantity === 0 ? "empty" : ""} `}>
+    <div className={`row ${quantity === 0 ? "empty" : ""} `} key={key + 'red'}>
+      <p>{props.datas.skillQuantity[key]}</p>
       <img
         className="skill-icon"
         src={`/assets/${props.datas.agent + (key + 1)}.svg`}
         alt=""
       />
-      <p>{props.datas.skillQuantity[key]}</p>
     </div>
   ));
 
@@ -18,7 +18,7 @@ const PlayerRed = (props) => {
       <div className="weapon">
         <img
           className="rotate"
-          src={`/assets/${props.datas.weapon}.svg`}
+          src={`/assets/${props.datas.weapon}.png`}
           alt=""
         />
       </div>

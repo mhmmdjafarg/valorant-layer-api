@@ -3,7 +3,7 @@ import "./PlayerGreen.css";
 const PlayerGreen = (props) => {
   // Looping through skills
   const skillList = props.datas.skillQuantity.map((quantity, key) => (
-    <div className={`row ${(quantity === 0) ? 'empty' : ''} `}>
+    <div className={`row ${(quantity === 0) ? 'empty' : ''} `} key={key + 'green'}>
       <img
         className="skill-icon"
         src={`/assets/${props.datas.agent + (key+1)}.svg`}
@@ -29,7 +29,7 @@ const PlayerGreen = (props) => {
         </div>
       </div>
       <div className="weapon">
-        <img src={`/assets/${props.datas.weapon}.svg`} alt="" />
+        <img src={`/assets/${props.datas.weapon}.png`} alt="" />
       </div>
       <div id="circle-green">
         <img className="circular-image" src={`/assets/${props.datas.agent + 'ultimate'}.svg`} alt="" />
