@@ -38,5 +38,5 @@ jobs:
       env:
         user_name: 'mhmmdjafarg'
         user_email: '13519197@std.stei.itb.ac.id'
-        github_token: ${{secrets.ACTIONS_DEPLOY_ACCESS_TOKEN}}
+        github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
         repository: ${{ github.repository }}
