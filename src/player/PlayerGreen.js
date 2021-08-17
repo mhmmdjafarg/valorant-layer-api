@@ -6,7 +6,7 @@ const PlayerGreen = (props) => {
     <div className={`row ${(quantity === 0) ? 'empty' : ''} `} key={key + 'green'}>
       <img
         className="skill-icon"
-        src={process.env.PUBLIC_URL + `/assets/${props.datas.agent + (key+1)}.svg`}
+        src={ `/assets/${props.datas.agent + (key+1)}.svg`}
         alt=""
       />
       <p>{props.datas.skillQuantity[key]}</p>
@@ -17,7 +17,7 @@ const PlayerGreen = (props) => {
     <div className="player">
       <div className="player-card">
         <div className="side-card">
-          <img src={process.env.PUBLIC_URL + `/assets/${props.datas.agent}.svg`} alt="" />
+          <img src={ `/assets/${props.datas.agent}.svg`} alt="" />
           <p className="player-name">{props.datas.name}</p>
         </div>
         <div className="centre-card-green">
@@ -29,10 +29,10 @@ const PlayerGreen = (props) => {
         </div>
       </div>
       <div className="weapon">
-        <img src={process.env.PUBLIC_URL + `/assets/${props.datas.weapon}.png`} alt="" />
+        <img src={ `/assets/${props.datas.weapon}.png`} alt="" />
       </div>
       <div id="circle-green">
-        <img className="circular-image" src={process.env.PUBLIC_URL +  `/assets/${props.datas.agent + 'ultimate'}.svg`} alt="" />
+        <img className="circular-image" src={  `/assets/${props.datas.agent + 'ultimate'}.svg`} alt="" />
       </div>
     </div>
   );
