@@ -7,7 +7,7 @@ const PlayerRed = (props) => {
       <p>{props.datas.skillQuantity[key]}</p>
       <img
         className="skill-icon"
-        src={ `/assets/${props.datas.agent + (key + 1)}.svg`}
+        src={`${process.env.PUBLIC_URL}/assets/${props.datas.agent + (key + 1)}.svg`}
         alt=""
       />
     </div>
@@ -18,7 +18,7 @@ const PlayerRed = (props) => {
       <div className="weapon">
         <img
           className="rotate"
-          src={ `/assets/${props.datas.weapon}.png`}
+          src={`${process.env.PUBLIC_URL}/assets/${props.datas.weapon}.png`}
           alt=""
         />
       </div>
@@ -31,7 +31,7 @@ const PlayerRed = (props) => {
         <div className="side-card">
           <img
             className="rotate"
-            src={ `/assets/${props.datas.agent}.svg`}
+            src={`${process.env.PUBLIC_URL}/assets/${props.datas.agent}.svg`}
             alt=""
           />
           <p className="player-name">{props.datas.name}</p>
@@ -40,7 +40,7 @@ const PlayerRed = (props) => {
       <div id="circle-red">
         <img
           className="circular-image"
-          src={ `/assets/${props.datas.agent + "ultimate"}.svg`}
+          src={`${process.env.PUBLIC_URL}/assets/${props.datas.agent + "ultimate"}.svg`}
           alt=""
         />
       </div>
